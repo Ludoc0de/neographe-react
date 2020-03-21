@@ -1,6 +1,6 @@
 body {
   background-color: blanchedalmond;
-  transition: 0.8s ease;
+  transition: 0.8s ease-out;
 }
 
 h1,
@@ -20,7 +20,7 @@ li {
 .darkTheme {
   background-color: #050505;
   color: beige;
-  transition: 0.8s ease;
+  transition: 0.8s ease-out;
 }
 
 header {
