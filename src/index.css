@@ -3,6 +3,20 @@ body {
   transition: 0.8s ease;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat Subrayada", "Roboto", sans-serif;
+}
+
+p,
+i,
+a,
+li {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+
 .darkTheme {
   background-color: #050505;
   color: beige;
@@ -15,6 +29,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 3.5em;
   justify-content: center;
   align-items: center;
   background-color: #fff0d2;
@@ -26,7 +41,8 @@ header {
 
 .header-p {
   text-align: center;
-  font-size: larger;
+  font-size: x-large;
+  font-family: "Montserrat Subrayada", "Open Sans", sans-serif;
 }
 
 .moon,
