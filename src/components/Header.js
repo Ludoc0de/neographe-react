@@ -12,9 +12,11 @@ class Header extends React.Component {
     }
 
     handleClick() {
-        this.setState(prevState => ({
-            moonLight: !prevState.moonLight
-        }))
+        setTimeout(() => {
+            this.setState(prevState => ({
+                moonLight: !prevState.moonLight
+            }))
+        }, 1000)
     }
 
     render() {
