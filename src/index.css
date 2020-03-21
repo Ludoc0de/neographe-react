@@ -1,6 +1,7 @@
 body {
   background-color: blanchedalmond;
   transition: 0.8s ease-out;
+  color: #0c0c0c;
 }
 
 h1,
@@ -32,7 +33,7 @@ header {
   height: 3.5em;
   justify-content: center;
   align-items: center;
-  background-color: #fff0d2;
+  background-color: #fff2d4;
 }
 
 .headerDarkTheme {
