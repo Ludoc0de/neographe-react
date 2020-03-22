@@ -38,11 +38,11 @@ header {
   height: 3.5em;
   justify-content: center;
   align-items: center;
-  background-color: #fff2d4;
+  background-color: #fff7d9;
 }
 
 .headerDarkTheme {
-  background-color: #0c0c0c;
+  background-color: #111111;
 }
 
 .header-p {
@@ -80,7 +80,7 @@ footer {
   height: 3em;
   justify-content: center;
   align-items: center;
-  background-color: #fff2d4;
+  background-color: #fff7d9;
 }
 
 .logo {
