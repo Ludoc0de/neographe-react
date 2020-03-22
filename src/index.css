@@ -24,6 +24,11 @@ li {
   transition: 0.8s ease-out;
 }
 
+.App-div {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -61,4 +66,23 @@ header {
   position: relative;
   left: 2em;
   transition: 1s ease;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff2d4;
+}
+
+.logo {
+  width: 2.5em;
 }
