@@ -39,13 +39,13 @@ class Header extends React.Component {
             <header ref={node => this.header = node}>
                 <p className='header-p'>{this.state.title}</p>
                 <div>
-                    <img className="moon" src={moon} alt=""
+                    <img className="moon" src={moon} alt="moon"
                         ref={node => this.turnOn = node}
                         onClick={this.handleClick}
                         style={{ display: this.state.moonLight ? 'none' : 'inline-block' }}
                     />
 
-                    <img className="sun" src={sunset} alt=""
+                    <img className="sun" src={sunset} alt="sun"
                         ref={node => this.turnOff = node}
                         onClick={this.handleClick}
                         style={{ display: this.state.moonLight ? 'inline-block' : 'none' }}
