@@ -8,7 +8,7 @@ import Twitter from '../images/twitteMini.svg'
 import Contact from '../images/contactMini.svg'
 import About from '../images/About.svg'
 
-class HeaderFoooter extends React.Component {
+class HeaderFooter extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -31,8 +31,8 @@ class HeaderFoooter extends React.Component {
 
     turnLight() {
         document.body.classList.toggle('darkTheme')
-        this.header.classList.toggle('headerDarkTheme')
-        this.footer.classList.toggle('headerDarkTheme')
+        this.header.classList.toggle('navDarkTheme')
+        this.footer.classList.toggle('navDarkTheme')
     }
 
     componentDidMount() {
@@ -80,4 +80,4 @@ class HeaderFoooter extends React.Component {
     }
 }
 
-export default Header
+export default HeaderFooter
