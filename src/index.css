@@ -111,3 +111,36 @@ footer:hover .logo2 {
   margin-right: 1.5em;
   transition: 0.5s ease;
 }
+
+.mainContent{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainContent:hover .mainLogo{
+transform: translateX(-30px);
+transition: ease-in 0.5s;
+}
+
+.mainContent:hover .mainLogoMirror{
+transform: translateX(30px);
+transition: ease-in 0.5s;
+}
+
+.mainLogo{
+ width : 45em;
+ z-index: 1;
+ transition: ease 0.5s;
+}
+
+.mainLogoMirror{
+  background-color: blanchedalmond;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  width : 45em;
+  clip-path: polygon(0% 100%, 0% 120%, 100% -21%, 100% 100%);
+  transition: ease 0.5s;
+}
