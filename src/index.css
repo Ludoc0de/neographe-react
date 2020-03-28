@@ -119,28 +119,56 @@ footer:hover .logo2 {
   transform: translate(-50%, -50%);
 }
 
+
 .mainContent:hover .mainLogo{
-transform: translateX(-30px);
-transition: ease-in 0.5s;
+  transform: translateX(-30px);
+  transition: ease-in 0.5s;
 }
 
-.mainContent:hover .mainLogoMirror{
-transform: translateX(30px);
-transition: ease-in 0.5s;
-}
 
 .mainLogo{
- width : 45em;
- z-index: 1;
- transition: ease 0.5s;
+  width : 45em;
+  transition: ease 0.5s;
+  animation: start 3s ease-out alternate;
+}
+
+@keyframes start {
+  0% {
+    transform: scale(0.9);
+  }
+  20%{
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60%{
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .mainLogoMirror{
   background-color: blanchedalmond;
-  z-index: 1;
   position: absolute;
   left: 0;
   width : 45em;
   clip-path: polygon(0% 100%, 0% 120%, 100% -21%, 100% 100%);
   transition: ease 0.5s;
+  animation: slash 0.5s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slash {
+  0% {
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(30px);
+  }
 }
