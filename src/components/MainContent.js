@@ -37,7 +37,7 @@ class MainContent extends Component {
                 LogoMirror: 'bloc'
             }
         })
-        }, 1000)
+        }, 2000)
     }
 
     render(){
@@ -45,7 +45,7 @@ class MainContent extends Component {
             <div className='mainContent'>
                 <img className='loaderImage' src={LoaderImage} 
                     style={{ display: this.state.loaderImage }} />
-                <svg className='loader'>
+                <svg className='loader' style={{ display: this.state.loader }}>
                     <circle cx="80" cy="80" r="65" style={{animation: this.state.loader}}></circle>
                 </svg>
 
