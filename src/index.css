@@ -31,7 +31,7 @@ li {
 
 header {
   display: flex;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -112,13 +112,21 @@ footer:hover .logo2 {
   transition: 0.5s ease;
 }
 
+/* */
+
 .mainContent{
+  width: 100%;
+  padding-top: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
   position: absolute;
   top: 50%;
   left:50%;
   transform: translate(-50%, -50%);
+  */
 }
-
 
 .mainContent:hover .mainLogo{
   transform: translateX(-30px);
@@ -128,59 +136,6 @@ footer:hover .logo2 {
 .mainContent:hover .mainLogoMirror{
   transform: translateX(30px);
   transition: ease-in 0.5s;
-}
-
-/* */
-
-
-.loader{
-  width: 10em;
-  height: 10em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -5em 0 0 -5em;
-  animation: loaderRotate 2s ease-in-out infinite;
-}
-
-@keyframes loaderRotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.loader circle{
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke-width: 20;
-  stroke: blanchedalmond;
-  stroke-dasharray: 410;
-  stroke-dashoffset: 410;
-  animation: loadCircle 2s ease-in infinite;
-}
-
-@keyframes loadCircle {
-  0%, 100% {
-    stroke-dashoffset: 410;
-  }
-
-  50% {
-    stroke-dashoffset: 0;
-  }
-
-  50.1%{
-    stroke-dashoffset: 820;
-  }
-}
-
-
-.loaderImage { 
-  width: 9em;
 }
 
 .mainLogo{
@@ -201,7 +156,7 @@ footer:hover .logo2 {
 .mainLogoMirror{
   background-color: blanchedalmond;
   position: absolute;
-  left: 0;
+  /*left: 0;*/
   width : 45em;
   clip-path: polygon(0% 100%, 0% 120%, 100% -21%, 100% 100%);
   transition: ease 0.5s;
@@ -217,4 +172,85 @@ footer:hover .logo2 {
   100%{
     transform: translateX(30px);
   }
+}
+
+.loaderImage { 
+  width: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5em 0 0 -5em;
+}
+
+.loader{
+  width: 10em;
+  height: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5em 0 0 -5em;
+  animation: loaderRotate 2s ease-in-out infinite;
+ 
+}
+
+@keyframes loaderRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader circle{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 28;
+  stroke: blanchedalmond;
+  stroke-dasharray: 410;
+  stroke-dashoffset: 410;
+  animation: loadCircle 2s ease-in infinite;
+}
+
+@keyframes loadCircle {
+  0%, 100% {
+    stroke-dashoffset: 410;
+  }
+
+  50% {
+    stroke-dashoffset: 0;
+  }
+
+  50.1%{
+    stroke-dashoffset: 820;
+  }
+}
+
+/**/
+.services {
+  height: 90%;
+  width: 100%;
+  position:fixed;
+  top:4em;
+  right: -94%;
+  background-color: darkblue;
+  color: beige;
+  transition: 1s ease-in-out;
+}
+
+.vertical{
+writing-mode:sideways-rl;
+transition: 0.5s linear;
+}
+
+.services:hover{
+  right: -1%;
+  transition: 0.5s ease-in-out;
+}
+
+.services:hover .vertical{
+  writing-mode: horizontal-tb;
+  transition: 0.5s linear;
 }
