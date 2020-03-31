@@ -68,6 +68,7 @@ class MainContent extends Component {
                     />
                 }
                 <section className='services' style={{right: this.state.open ? 0 : '-'+100+'%'}}>
+                    {!this.state.anime &&
                     <h2 className='vertical' 
                         onClick={this.handleClick}
                         style={{ 
@@ -78,6 +79,7 @@ class MainContent extends Component {
                     >
                         Services
                     </h2>
+                    }
                 </section>
                 
             </div>
