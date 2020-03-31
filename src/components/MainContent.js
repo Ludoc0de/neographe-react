@@ -52,13 +52,16 @@ class MainContent extends Component {
                 <img className='mainLogo' src={DarkLogo}  
                     style={{ display: this.state.mainLog, animation:this.state.anime}}
                 />
+
                 {
-                    this.state.anime ? 
-                    console.log('tezst') :
+                    !this.state.anime &&
                     <img className='mainLogoMirror' src={DarkLogo}
                         style={{ display: this.state.LogoMirror }}
                     />
                 }
+                <section className='services'>
+                    <h2 className='vertical'>Services</h2>
+                </section>
                 
             </div>
         )
