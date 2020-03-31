@@ -6,13 +6,14 @@ class MainContent extends Component {
     constructor(){
         super()
         this.state = {
-            loaderImage:'',
             loader: '',
             mainLog:'none',
             anime: 'none',
-            LogoMirror:'none' 
+            LogoMirror:'none',
+            open:false
         }
         this.handleLoad = this.handleLoad.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
 
     
@@ -30,7 +31,6 @@ class MainContent extends Component {
         setTimeout(() => {
         this.setState(prevState => {
             return {
-                loaderImage: 'none',
                 loader: 'none',
                 mainLog: '',
                 anime: '',
@@ -40,11 +40,19 @@ class MainContent extends Component {
         }, 2000)
     }
 
+    handleClick(){
+        this.setState(prevState => {
+            return {
+                open: !prevState.open
+            }
+        })
+    }
+
     render(){
         return(
             <div className='mainContent'>
                 <img className='loaderImage' src={LoaderImage} 
-                    style={{ display: this.state.loaderImage }} />
+                    style={{ display: this.state.loader}} />
                 <svg className='loader' style={{ display: this.state.loader }}>
                     <circle cx="80" cy="80" r="65" style={{animation: this.state.loader}}></circle>
                 </svg>
@@ -59,8 +67,17 @@ class MainContent extends Component {
                         style={{ display: this.state.LogoMirror }}
                     />
                 }
-                <section className='services'>
-                    <h2 className='vertical'>Services</h2>
+                <section className='services' style={{right: this.state.open ? 0 : '-'+100+'%'}}>
+                    <h2 className='vertical' 
+                        onClick={this.handleClick}
+                        style={{ 
+                            right: this.state.open ? 0+'em' : 2+'em',
+                            marginLeft: this.state.open ? 0 + 'em' : 0.5+ 'em',
+                            writingMode: this.state.open && 'horizontal-tb' 
+                        }}
+                    >
+                        Services
+                    </h2>
                 </section>
                 
             </div>
