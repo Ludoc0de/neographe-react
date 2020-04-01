@@ -241,12 +241,20 @@ footer:hover .logo2 {
 }
 
 .vertical{
-position: relative;
-right:2em;
-background-color: #4175af;
-writing-mode:sideways-rl;
-padding:0.2em 0 0.2em 0.3em;
-margin-top: 0;
-border-radius: 0.5em 0 0 0.5em;
-transition: 0.5s linear;
+  position: relative;
+  right:2em;
+  background-color: #4175af;
+  writing-mode:sideways-rl;
+  padding:0.2em 0 0.2em 0.3em;
+  margin-top: 0;
+  border-radius: 0.5em 0 0 0.5em;
+  transition: 0.5s linear;
+  animation:pop 0.65s ease; /*creat animation for pop */
+}
+
+@keyframes pop {
+  from {
+    right: 0em;
+  }
+  
 }
