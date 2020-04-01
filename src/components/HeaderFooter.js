@@ -81,11 +81,11 @@ class HeaderFooter extends React.Component {
                             <img className="logo2" alt="darkTwitter" src={Twitter} />
                         }
                     </a>
-                    {
-                        this.state.moonLight ?
-                        <img className="logo" alt="logo" src={DarkLogo} /> :
-                        <img className="logo" alt="logo" src={Logo} />
-                    }
+                        {
+                            this.state.moonLight ?
+                            <img className="logo" alt="logo" src={DarkLogo} /> :
+                            <img className="logo" alt="logo" src={Logo} />
+                        }
                     <a href='#'>
                         {
                             this.state.moonLight ?
