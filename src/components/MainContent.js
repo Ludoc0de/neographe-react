@@ -92,7 +92,7 @@ class MainContent extends Component {
                         <h2 className='services-h2' 
                             onClick={this.handleClickServices}
                             style={{ 
-                                right: this.state.openServices ? 0+'em' : 2+'em',
+                                right: this.state.openServices && 0+'em',
                                 marginLeft: this.state.openServices ? 0 + 'em' : 0.5+ 'em',
                                 writingMode: this.state.openServices && 'horizontal-tb' 
                             }}
@@ -129,7 +129,7 @@ class MainContent extends Component {
                             onClick={this.handleClickProject}
                             
                             style={{
-                                right: this.state.openProject ? 0 + 'em' : 2 + 'em',
+                                right: this.state.openProject && 0 + 'em',
                                 marginTop: this.state.openProject ? 0 + 'em' : 5.7 + 'em',
                                 marginLeft: this.state.openProject ? 0 + 'em' : 0.5 + 'em',
                                 writingMode: this.state.openProject && 'horizontal-tb'
@@ -150,7 +150,7 @@ class MainContent extends Component {
                             onClick={this.handleClickContact}
 
                             style={{
-                                right: this.state.openContact ? 0 + 'em' : 2 + 'em',
+                                right: this.state.openContact && 0 + 'em',
                                 marginTop: this.state.openContact ? 0 + 'em' : 16.39 + 'em',
                                 marginLeft: this.state.openContact ? 0 + 'em' : 0.5 + 'em',
                                 writingMode: this.state.openContact && 'horizontal-tb'
