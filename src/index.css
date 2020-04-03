@@ -281,12 +281,32 @@ footer:hover .logo2 {
   animation:pop 0.65s ease; 
 }
 
-.services-p,
+/* .services-p, */
 .project-p,
 .contact-p {
   margin-left: 1em;
 }
 
+.services-illustration {
+margin-top: 5em;
+display: flex;
+justify-content: space-around;
+
+}
+
+.services-image{
+width: 50em;
+height: 40em;
+background-color: black;
+}
+
+.services-h3 {
+  font-size: x-large;
+  column-span: inherit;
+}
 .services-text {
-  columns: 2;
+  border-left:  0.3em solid #050505;
+  padding-left: 4em;
+  columns: 2 25em;
+  column-gap: 2em;
 }
