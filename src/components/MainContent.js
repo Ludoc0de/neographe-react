@@ -12,7 +12,8 @@ class MainContent extends Component {
             LogoMirror:'none',
             openServicesServices:false,
             openServicesProject: false,
-            openServicesContact: false
+            openServicesContact: false,
+            borderService:false
         }
         this.handleLoad = this.handleLoad.bind(this)
         this.handleClickServices = this.handleClickServices.bind(this)
@@ -44,7 +45,8 @@ class MainContent extends Component {
     handleClickServices(){
         this.setState(prevState => {
             return {
-                openServices: !prevState.openServices
+                openServices: !prevState.openServices,
+                borderService: !prevState.borderService
             }
         })
     }
@@ -98,8 +100,17 @@ class MainContent extends Component {
                             Services
                         </h2>
                     }
-
+                
                     <div className='services-illustration'>
+                        <div className='border'
+                            onClick={this.handleClickServices}
+                            style={{ 
+                                width: this.state.borderService && 0.3+'em',
+                                backgroundColor: this.state.borderService && '#050505'
+                            }}
+                        > 
+                        </div>
+
                         <img className='services-image' />
                         <div className='services-text'>
                             <h3 className='services-h3'>Bienveue sur Néographe</h3>
