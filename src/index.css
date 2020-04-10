@@ -291,7 +291,6 @@ footer:hover .logo2 {
 margin-top: 5em;
 display: flex;
 justify-content: space-around;
-
 }
 
 .services-image{
@@ -311,7 +310,7 @@ background-color: black;
   text-align: justify;
 }
 
-/* test */
+/* border services */
 .border {
   position: absolute;
   top: 50%;
@@ -321,4 +320,60 @@ background-color: black;
   height: 80%;
   background-color: blanchedalmond;
   transition: 0.7s ease-in-out;
+}
+
+/* images project */
+
+.project-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-portfolio {
+  height: 40em;
+  display: flex;
+}
+
+.project-number  {
+  width: 7em;
+  margin-left: 1em;
+  overflow: hidden;
+  transition: 0.35s ease-in;
+  border-right: 0em solid #4175af;
+}
+
+.project-number:hover {
+  width: 50em;
+  transition: 0.35s 0.3s ease-out;
+  border-right: 0.3em solid #4175af;
+}
+
+.project-number:hover .project-images{
+  filter: drop-shadow(8px 8px 8px black);
+}
+
+.project-images {
+  padding-left: 0.5em;
+  width: 47em;
+  border-radius: 5px;
+  filter: blur(3px);
+}
+
+.project-p {
+  height: 0em;
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+.project-number:hover .project-p {
+  height: auto;
+  opacity: 1;
+  transition: 0.35s ease-in;
+}
+
+.project-a{
+  font-size: large;
+  color: #4175af;
+  text-decoration: none;
 }
