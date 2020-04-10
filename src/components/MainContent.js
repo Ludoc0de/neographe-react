@@ -3,6 +3,11 @@ import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
 import ProjectImage1 from '../images/projet1.jpg'
+import ProjectImage2 from '../images/projet2.jpg'
+import ProjectImage3 from '../images/projet3.jpg'
+import ProjectImage4 from '../images/projet4.jpg'
+import ProjectImage5 from '../images/projet5.jpg'
+import ProjectImage6 from '../images/projet6.jpg'
 
 class MainContent extends Component {
     constructor(){
@@ -146,12 +151,58 @@ class MainContent extends Component {
                             <div className='project-1 project-number'>
                                 <h3>Projet 1</h3>
                                 <img className='project-images' src={ProjectImage1} />
-                                <p className='project-p'>Réalisation d'un site vitrine en utilisant HTML5|CSS3</p>
+                                <p className='project-p'>Réalisation d'un site vitrine en utilisant HTML5|CSS3 et validation par W3C</p>
                                 <a className='project-a' href="https://projet1.neographe.org/" target="_blank">
                                     Une agence web !
                                 </a>
                             </div>
+
+                            <div className='project-2 project-number'>
+                                <h3>Projet 2</h3>
+                                <img className='project-images' src={ProjectImage2} />
+                                <p className='project-p'>Un site touristique avec wordpress, principe de SEO, Validation de la WCAG 2.0 et le responsive design !</p>
+                                <a className='project-a' href="https://neographe.org/" target="_blank">
+                                    Pour du tourisme ?
+                                </a>
+                            </div>
+
+                            <div className='project-3 project-number'>
+                                <h3>Projet 3</h3>
+                                <img className='project-images' src={ProjectImage3} />
+                                <p className='project-p'>Utilisation de JavaScript, d'une API, d'une carte interactive, d'un formulaire et confirmation par signature.</p>
+                                <a className='project-a' href="https://projet3.neographe.org/" target="_blank">
+                                    Avec un vélo !
+                                </a>
+                            </div>
+
+                            <div className='project-4 project-number'>
+                                <h3>Projet 4</h3>
+                                <img className='project-images' src={ProjectImage4} />
+                                <p className='project-p'>L'univers du BackEnd avec PHP/MYSQ, blog en CRUD et utilisation de CSS BOOTSTRAP</p>
+                                <a className='project-a' href="https://projet4.neographe.org/" target="_blank">
+                                    Ou un livre ?!
+                                </a>
+                            </div>
+                            <div className='project-5 project-number'>
+                                <h3>Projet 5</h3>
+                                <img className='project-images' src={ProjectImage5} 
+                                style={{ width:40+'em'}} />
+                                <p className='project-p'>HTML5|CSS3|JS|PHP|MySql, accès administrateur.</p>
+                                <a className='project-a' href="https://food.neographe.org/" target="_blank">
+                                    Dès qu'on mange !
+                                </a>
+                            </div>
         
+                            <div className='project-6 project-number'>
+                                <h3>Projet 6</h3>
+                                <img className='project-images' src={ProjectImage6}
+                                    style={{ width: 44 + 'em' }} />
+                                <p className='project-p'>HTML5|CSS3|REACTJS</p>
+                                <a className='project-a' href="https://neographe.org/" target="_blank">
+                                    Ou prendre contact ?
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </section>
