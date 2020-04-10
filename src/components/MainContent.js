@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
+import ProjectImage1 from '../images/projet1.jpg'
+
 class MainContent extends Component {
     constructor(){
         super()
@@ -139,9 +141,19 @@ class MainContent extends Component {
                             Projets réalisés
                         </h2>
                     }
-                    <p className='project-p'>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
+                    <div className='project-illustration'>
+                        <div className='project-portfolio'>
+                            <div className='project-1 project-number'>
+                                <h3>Projet 1</h3>
+                                <img className='project-images' src={ProjectImage1} />
+                                <p className='project-p'>Réalisation d'un site vitrine en utilisant HTML5|CSS3</p>
+                                <a className='project-a' href="https://projet1.neographe.org/" target="_blank">
+                                    Une agence web !
+                                </a>
+                            </div>
+        
+                        </div>
+                    </div>
                 </section>
 
                 <section className='contact' style={{ right: this.state.openContact ? '-'+0.25+'%' : '-' + 100 + '%' }}>
