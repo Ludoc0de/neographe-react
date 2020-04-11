@@ -20,12 +20,14 @@ class MainContent extends Component {
             openServicesServices:false,
             openServicesProject: false,
             openServicesContact: false,
-            borderService:false
+            borderService:false,
+            firstName:""
         }
         this.handleLoad = this.handleLoad.bind(this)
         this.handleClickServices = this.handleClickServices.bind(this)
         this.handleClickProject = this.handleClickProject.bind(this)
         this.handleClickContact = this.handleClickContact.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
 
     componentDidMount(){
@@ -71,6 +73,13 @@ class MainContent extends Component {
             return {
                 openContact: !prevState.openContact
             }
+        })
+    }
+
+    handleChange(event){
+        const {name, value} = event.target
+        this.setState({
+            [name]: value
         })
     }
 
@@ -223,11 +232,26 @@ class MainContent extends Component {
                             Contact
                         </h2>
                     }
-                    <p className='contact-p'>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </p>
+                    <div className="contact-illustration">
+                       
+                        <form className="contact-form">
+                            <input
+                                type="text"
+                                value={this.state.firstName}
+                                name="firstName"
+                                onChange={this.handleChange}
+                                required
+                            />
+                            <label className="contact-label">
+                                <span className="contact-firstName">Prénom</span>
+                            </label>
+                
+                        </form>
+                       
+                    </div>
+                    
                 </section>
-            
+                    
             </div>
         )
     }
