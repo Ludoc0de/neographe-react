@@ -390,3 +390,61 @@ background-color: black;
   color: #4175af;
   text-decoration: none;
 }
+
+/*form*/
+.contact-illustration {
+  height: 40em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  position: relative;
+  width: 50%;
+  height: 3em;
+}
+
+.contact-form input{
+  width:100%;
+  height: 100%;
+  color: #0c0c0c;
+  padding-top: 0.85em;
+  border: none;
+}
+
+.contact-form label {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 0.1em solid #050505;
+}
+
+.contact-form label::after{
+  content:"";
+  position: absolute;
+  left:0;
+  bottom: -0.1em;
+  height: 100%;
+  width: 100%;
+  border-bottom: 0.3em solid #4175af;
+  transform: translateX(-100%);
+}
+
+.contact-firstName {
+  position: absolute;
+  bottom:0.3em;
+  left:0;
+  transition: all 0.3s ease-in;
+}
+
+.contact-form input:focus + .contact-label .contact-firstName,
+.contact-form input:valid + .contact-label .contact-firstName {
+  transform: translateY(-100%);
+  font-size: larger;
+  color: #4175af;
+}
