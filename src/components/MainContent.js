@@ -22,7 +22,10 @@ class MainContent extends Component {
             openServicesContact: false,
             borderService:false,
             firstName:"",
-            lastName:""
+            lastName:"",
+            mail:"",
+            subject:"",
+            textArea:"Saisissez ici votre demande"
         }
         this.handleLoad = this.handleLoad.bind(this)
         this.handleClickServices = this.handleClickServices.bind(this)
@@ -260,6 +263,40 @@ class MainContent extends Component {
                                     <span className="contact-name">Nom</span>
                                 </label>
                             </p>
+                            <p className="contact-input">
+                                <input
+                                    type="email"
+                                    value={this.state.mail}
+                                    name="mail"
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                                <label className="contact-label">
+                                    <span className="contact-name">Mail</span>
+                                </label>
+                            </p>
+                            <p className="contact-input"> Objet :
+                                <select 
+                                    className="contact-select"
+                                    value={this.state.subject}
+                                    onChange={this.handleChange}
+                                    name="subject"
+                                    required
+                                >
+                                    <option value="site">Création de site</option>
+                                    <option value="logo">Création de logo</option>
+                                    <option value="photo">Shooting photo</option>
+                                </select>
+                            </p>
+                            <textarea 
+                                className="contact-textarea"
+                                value={this.state.textArea}
+                                onChange={this.handleChange}
+                                name="textArea"
+                                rows={8}
+                                cols={40}
+                            >
+						    </textarea>
                         </form>
 
                         <div className="test">
