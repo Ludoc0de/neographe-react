@@ -21,7 +21,8 @@ class MainContent extends Component {
             openServicesProject: false,
             openServicesContact: false,
             borderService:false,
-            firstName:""
+            firstName:"",
+            lastName:""
         }
         this.handleLoad = this.handleLoad.bind(this)
         this.handleClickServices = this.handleClickServices.bind(this)
@@ -235,18 +236,34 @@ class MainContent extends Component {
                     <div className="contact-illustration">
                        
                         <form className="contact-form">
-                            <input
-                                type="text"
-                                value={this.state.firstName}
-                                name="firstName"
-                                onChange={this.handleChange}
-                                required
-                            />
-                            <label className="contact-label">
-                                <span className="contact-firstName">Prénom</span>
-                            </label>
-                
+                            <p className="contact-input">
+                                <input
+                                    type="text"
+                                    value={this.state.firstName}
+                                    name="firstName"
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                                <label className="contact-label">
+                                    <span className="contact-name">Prénom</span>
+                                </label>
+                            </p>
+                            <p className="contact-input">
+                                <input
+                                    type="text"
+                                    value={this.state.lastName}
+                                    name="lastName"
+                                    onChange={this.handleChange}
+                                    required
+                                />
+                                <label className="contact-label">
+                                    <span className="contact-name">Nom</span>
+                                </label>
+                            </p>
                         </form>
+
+                        <div className="test">
+                        </div>
                        
                     </div>
                     
