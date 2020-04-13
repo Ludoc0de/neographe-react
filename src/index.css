@@ -467,6 +467,16 @@ background-color: black;
   transform: translateX(0);
 }
 
+.contact-select{
+  margin-left: 1em;
+  border: 0.1em solid #0c0c0c;
+  border-radius: 0.5em;
+  color: #4175af;
+  background-color: #fff7d9;
+  font-weight: 500;
+  font-size: large;
+}
+
 .test {
   width: 40%;
   height: 40em;
