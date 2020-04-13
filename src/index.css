@@ -364,7 +364,7 @@ background-color: black;
 .project-images {
   padding-left: 0.5em;
   width: 47em;
-  border-radius: 5px;
+  border-radius: 0.5em;
   filter: drop-shadow(0px 0px 0px) blur(3px);
   transition: 0.6s ease-in-out;
 }
@@ -432,7 +432,7 @@ background-color: black;
   width: 50%;
   height: 100%;
   pointer-events: none;
-  border-bottom: 0.1em solid #050505;
+  border-bottom: 0.1em solid #0c0c0c;
 }
 
 .contact-input label::after{
@@ -474,7 +474,26 @@ background-color: black;
   color: #4175af;
   background-color: #fff7d9;
   font-weight: 500;
+  font-size: medium;
+}
+
+textarea {
+  font-weight: 500;
   font-size: large;
+  border: 0.1em solid #0c0c0c;
+  border-radius: 0.5em;
+  color: #4175af;
+  background-color: #fff7d9;
+}
+
+.contact-button {
+  font-weight: 500;
+  font-size: medium;
+  margin-top:1em;
+  width: 50%;
+  border-radius: 0.5em;
+  color: #0c0c0c;
+  background-color: #4175af;
 }
 
 .test {
