@@ -32,6 +32,7 @@ class MainContent extends Component {
         this.handleClickProject = this.handleClickProject.bind(this)
         this.handleClickContact = this.handleClickContact.bind(this)
         this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     componentDidMount(){
@@ -85,6 +86,11 @@ class MainContent extends Component {
         this.setState({
             [name]: value
         })
+    }
+
+    handleSubmit(event){
+        alert("démo local")
+        event.preventDefault()
     }
 
     render(){ 
@@ -238,7 +244,7 @@ class MainContent extends Component {
                     }
                     <div className="contact-illustration">
                        
-                        <form className="contact-form">
+                        <form className="contact-form" onSubmit={this.handleSubmit}>
                             <p className="contact-input">
                                 <input
                                     type="text"
@@ -297,6 +303,12 @@ class MainContent extends Component {
                                 cols={40}
                             >
 						    </textarea>
+                            <input
+                                className="contact-button" 
+                                value="Envoyer"
+                                type="submit" 
+                                name="submit"
+                            />
                         </form>
 
                         <div className="test">
