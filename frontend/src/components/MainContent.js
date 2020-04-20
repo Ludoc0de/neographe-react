@@ -89,8 +89,22 @@ class MainContent extends Component {
     }
 
     handleSubmit(event){
-        alert("démo local")
-        event.preventDefault()
+        fetch('http://localhost:3001/api/form', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                firstName: this.state.firstName,
+                lastName: this.state.lastName,
+                mail: this.state.mail,
+                subject: this.state.subject,
+                textArea: this.state.textArea
+            })
+        });
+        alert("Formulaire envoyé")
+        //event.preventDefault()
     }
 
     render(){ 
@@ -244,7 +258,7 @@ class MainContent extends Component {
                     }
                     <div className="contact-illustration">
                        
-                        <form className="contact-form" onSubmit={this.handleSubmit}>
+                        <form className="contact-form" onSubmit={this.handleSubmit} action='http://localhost:3001/api/form' method='post'>
                             <p className="contact-input">
                                 <input
                                     type="text"
