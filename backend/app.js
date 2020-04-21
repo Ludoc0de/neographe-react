@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
 
 const app = express()
 
-let forms = require("./db")
+//let forms = require("./db")
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -22,8 +22,8 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
-app.get('/api/form', (req, res, next)=> {
-    connection.query('select * from form', function (error, results, fields) {
+app.get('/get-form', (req, res, next)=> {
+    connection.query('SELECT * FROM form', (error, results, fields) => {
         if (error) throw error;
         res.send(JSON.stringify(results));
     });
