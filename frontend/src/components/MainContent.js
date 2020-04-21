@@ -98,7 +98,7 @@ class MainContent extends Component {
             body: JSON.stringify({
                 firstName: this.state.firstName,
                 lastName: this.state.lastName,
-                mail: this.state.mail,
+                email: this.state.mail,
                 subject: this.state.subject,
                 textArea: this.state.textArea
             })
