@@ -22,10 +22,20 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
+// for update
+//app.post('/api/form', (req, res, next) => {
+//     const formData = req.body
+//     connection.query("INSERT INTO form SET ?", formData, (error, results, fields) => {
+//         if (error) throw error;
+//         res.send(JSON.stringify(results));
+//     });
+// });
+
 app.post('/api/form', (req, res, next) => {
 
-    const formData = req.body
-    connection.query("INSERT INTO form SET ?", formData, (error, results, fields) => {
+    const sql = "INSERT INTO form (firstname, lastname, mail, subject, textarea) VALUES ('" + req.body.firstName + "','" + req.body.lastName + "','" + req.body.mail + "','" + req.body.subject + "','" + req.body.textArea + "')"
+
+    connection.query(sql, (error, results, fields) => {
         if (error) throw error;
         res.send(JSON.stringify(results));
     });
