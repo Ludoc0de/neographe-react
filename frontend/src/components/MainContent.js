@@ -104,7 +104,7 @@ class MainContent extends Component {
             })
         });
         alert("Formulaire envoyé")
-        //event.preventDefault()
+        event.preventDefault()
     }
 
     render(){ 
