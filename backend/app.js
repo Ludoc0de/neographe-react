@@ -22,25 +22,12 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
-app.post('/api/form', (req, res, next)=> {
-    console.log(req.body);
-    res.status(201).json({
-        data : forms
+app.get('/api/form', (req, res, next)=> {
+    connection.query('select * from form', function (error, results, fields) {
+        if (error) throw error;
+        res.send(JSON.stringify(results));
     });
-})
+});
 
-// app.use('/api/form', (req, res, next) => {
-//         console.log("test")
-//         try {
-//             res.status(201).json({
-//                 data: forms
-//             });
-//         } catch (err) {
-//             res.status(400).json({
-//                 message: "Some error occured",
-//                 err
-//             });
-//         }
-// });
 
 module.exports = app
