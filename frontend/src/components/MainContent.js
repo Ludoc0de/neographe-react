@@ -24,7 +24,7 @@ class MainContent extends Component {
             firstName:"",
             lastName:"",
             mail:"",
-            subject:"",
+            subject:"site",
             textArea:"Saisissez ici votre demande"
         }
         this.handleLoad = this.handleLoad.bind(this)
