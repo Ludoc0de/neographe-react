@@ -153,10 +153,10 @@ class MainContent extends Component {
 
                         <img className='services-image' src={DarkLogo}  />
                         <div className='services-text'>
-                            <h3 className='services-h3'>Bienveue sur Néographe</h3>
+                            <h3 className='services-h3'>Bienvenue sur Néographe</h3>
                             <div className='services-p'>
                                 <p>
-                                    Néographe, c'est quoi ? C'est une nouvelle aventure pleine de passion ! Mais dans les aventures ils arrivent de se lancer en retard, de s'égarer, voir de se perdre. Il faut savoir s'arrêter puis, faire le point où on est et... ce lancer ! Neographe sera là pour vous aider à conceptualiser vos idées dans le monde du numérique si indispensable à nos vies.
+                                    Néographe, c'est quoi ? C'est une nouvelle aventure pleine de passion ! Mais il arrive de partir en retard, de s'égarer, voir de se perdre. Il faut savoir s'arrêter puis, faire le point où on est et... se lancer ! Neographe sera là pour vous aider à conceptualiser vos idées dans le monde du numérique si indispensable à nos vies.
                                 </p>
                                 <p>
                                     Nous apportons nos services dans la création de vos sites internets avec les derniers langages modernes. Une écoute et un suivi personnaliser de vos projets, un retour professionnel sur les conseils techniques pour la vie de votre site.
