@@ -151,14 +151,27 @@ class MainContent extends Component {
                         > 
                         </div>
 
-                        <img className='services-image' />
+                        <img className='services-image' src={DarkLogo}  />
                         <div className='services-text'>
                             <h3 className='services-h3'>Bienveue sur Néographe</h3>
-                            <p className='services-p'>
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                           
-                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            </p>
+                            <div className='services-p'>
+                                <p>
+                                    Néographe, c'est quoi ? C'est une nouvelle aventure pleine de passion ! Mais dans les aventures ils arrivent de se lancer en retard, de s'égarer, voir de se perdre. Il faut savoir s'arrêter puis, faire le point où on est et... ce lancer ! Neographe sera là pour vous aider à conceptualiser vos idées dans le monde du numérique si indispensable à nos vies.
+                                </p>
+                                <p>
+                                    Nous apportons nos services dans la création de vos sites internets avec les derniers langages modernes. Une écoute et un suivi personnaliser de vos projets, un retour professionnel sur les conseils techniques pour la vie de votre site.
+                                </p>
+                                <p>
+                                    Vous cherchez à vous démarquer ? Nous réalisons aussi des logos à votre image, reflétons les idées même de ce que vous désirez.
+                                     
+                                    Enfin, il nous est possible d'arrêter le temps avec notre équipe de photographes qui sauront satisfaire les moments éternels de votre vie.
+                                </p>
+                                <h4>
+                                    Création site | Création de logo | Shooting photo 
+                                    <br/>
+                                    Neographe, c'est ca !
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </section>
