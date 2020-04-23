@@ -394,8 +394,9 @@ height: 40em;
 .contact-illustration {
   height: 40em;
   display: flex;
-  justify-content: space-around;
-  margin-top:6em;
+  justify-content: flex-start;
+  margin-left: 4em;
+  margin-top:4em;
 }
 
 .contact-form {
@@ -496,8 +497,8 @@ textarea {
   background-color: #4175af;
 }
 
-.test {
+/* .test {
   width: 40%;
   height: 40em;
   background-color: black;
-}
+} */
