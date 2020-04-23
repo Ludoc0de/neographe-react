@@ -502,3 +502,48 @@ textarea {
   height: 40em;
   background-color: black;
 } */
+
+/* phone */
+
+@media screen and (max-width: 540px) {
+
+  .mainLogo{
+    margin-top: 30%;
+    width : 20em;
+  }
+
+  .mainLogoMirror{
+    display: none;
+  }
+
+  .services-illustration, 
+  .project-illustration, 
+  .contact-illustration {
+    margin-top: -2em;
+  }
+
+  /*SERVICES*/
+
+  .border {
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translate(0%, -50%);
+  }
+
+  .services-image{
+    display: none;
+  }
+
+  .services-text{
+    margin-top: 2em;
+    padding-left: 0.75em;
+    padding-right: 2.75em;
+  }
+
+  .services-h3 {
+    font-size: 1.35em;
+  }
+
+
+}
