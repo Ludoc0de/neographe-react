@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
+import Services from '../images/langages.svg'
 import ProjectImage1 from '../images/projet1.jpg'
 import ProjectImage2 from '../images/projet2.jpg'
 import ProjectImage3 from '../images/projet3.jpg'
@@ -151,7 +152,7 @@ class MainContent extends Component {
                         > 
                         </div>
 
-                        <img className='services-image' src={DarkLogo}  />
+                        <img className='services-image' src={Services}  />
                         <div className='services-text'>
                             <h3 className='services-h3'>Bienvenue sur Néographe</h3>
                             <div className='services-p'>
