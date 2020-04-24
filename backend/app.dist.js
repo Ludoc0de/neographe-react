@@ -8,6 +8,9 @@ const connection = mysql.createConnection({
     password: '',
     database: ''
 })
+connection.connect((err) => {
+    (err) ? console.log('error connection') : console.log('success connection')
+})
 
 const app = express()
 
