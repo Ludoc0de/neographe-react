@@ -232,8 +232,7 @@ class MainContent extends Component {
                             </div>
                             <div className='project-5 project-number'>
                                 <h3>Projet 5</h3>
-                                <img className='project-images' src={ProjectImage5} 
-                                style={{ width:40+'em'}} />
+                                <img className='project-images' src={ProjectImage5} />
                                 <p className='project-p'>HTML5|CSS3|JS|PHP|MySql|GITHUB</p>
                                 <a className='project-a' href="https://food.neographe.org/" target="_blank">
                                     Dès qu'on mange !
@@ -242,8 +241,7 @@ class MainContent extends Component {
         
                             <div className='project-6 project-number'>
                                 <h3>Projet 6</h3>
-                                <img className='project-images' src={ProjectImage6}
-                                    style={{ width: 44 + 'em' }} />
+                                <img className='project-images' src={ProjectImage6} />
                                 <p className='project-p'>HTML5|CSS3|REACTJS</p>
                                 <a className='project-a' href="https://neographe.org/" target="_blank">
                                     Ou prendre contact ?
