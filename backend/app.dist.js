@@ -45,7 +45,7 @@ app.post('/api/form', (req, res, next) => {
 });
 
 
-app.get('/get-form', (req, res, next) => {
+app.get('/api/form', (req, res, next) => {
     connection.query('SELECT * FROM form', (error, results, fields) => {
         if (error) throw error;
         res.send(JSON.stringify(results));
