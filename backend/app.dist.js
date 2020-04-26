@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 
-
+const formRoutes = require('./routes/form')
 
 const app = express()
 
@@ -14,5 +14,6 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
+app.use('/api/form', formRoutes)
 
 module.exports = app
