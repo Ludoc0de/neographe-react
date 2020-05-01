@@ -497,11 +497,21 @@ textarea {
   background-color: #4175af;
 }
 
-/* .test {
-  width: 40%;
-  height: 40em;
-  background-color: black;
-} */
+/*login*/
+.login-form{
+  margin-left: 1em;
+}
+
+.login-button,
+.back-button {
+  font-weight: 500;
+  font-size: medium;
+  margin-top:1em;
+  width: 20em;
+  border-radius: 0.5em;
+  color: #0c0c0c;
+  background-color: #4175af;
+}
 
 /* phone */
 
