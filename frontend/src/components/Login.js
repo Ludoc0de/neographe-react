@@ -18,7 +18,7 @@ class Login extends React.Component {
 
     render() {
         return (
-            <form className="login-form" onSubmit={this.handleSubmit} action='' method='post'>
+            <form className="login-form" onSubmit={this.handleSubmit} action='http://localhost:3001/api/auth' method='post'>
                 <p className="contact-input">
                     <input
                         type="text"
