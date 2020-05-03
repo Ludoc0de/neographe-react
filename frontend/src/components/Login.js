@@ -22,7 +22,7 @@ class Login extends React.Component {
                 <p className="contact-input">
                     <input
                         type="text"
-                        value={this.state.firstName}
+                        value={this.state.user}
                         name="user"
                         onChange={this.handleChange}
                         required
@@ -34,7 +34,7 @@ class Login extends React.Component {
                 <p className="contact-input">
                     <input
                         type="password"
-                        value={this.state.lastName}
+                        value={this.state.password}
                         name="password"
                         onChange={this.handleChange}
                         required
