@@ -33,7 +33,7 @@ class Login extends React.Component {
                 </p>
                 <p className="contact-input">
                     <input
-                        type="text"
+                        type="password"
                         value={this.state.lastName}
                         name="password"
                         onChange={this.handleChange}
