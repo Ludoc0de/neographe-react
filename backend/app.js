@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const formRoutes = require('./routes/form')
+const userRoutes = require('./routes/user')
 
 const app = express()
 
@@ -15,5 +16,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 app.use('/api/form', formRoutes)
+//update url before put in host
+app.use('/api/auth', userRoutes)
 
 module.exports = app
