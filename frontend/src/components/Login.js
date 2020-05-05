@@ -20,7 +20,7 @@ class Login extends React.Component {
     }
 
     handleSubmit(event) {
-        fetch('http://localhost:3001/api/auth', {
+        fetch('http://localhost:3001/api/auth/login', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
