@@ -18,3 +18,19 @@ exports.login = async (req, res, next) => {
     const user = req.body.user
     const password = req.body.password
     const sql = `SELECT * FROM admin WHERE user = ?`
+
+    connection.query(sql, [user], async (error, results) => {
+        if (error) {
+            console.error(error.message);
+        } else if (results.length > 0) {
+            const valid = await bcrypt.compare(password, results[0].password)
+            if (valid) {
+                res.status(205).send('Login sucessfull')
+            } else {
+                res.status(410).send('password does not exist')
+            }
+        } else {
+            res.status(510).send("user/password does not exist")
+        }
+    });
+}
