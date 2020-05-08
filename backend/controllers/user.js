@@ -8,7 +8,7 @@ exports.signup = async (req, res, next) => {
 
     const sql = `INSERT INTO admin (user, password) VALUES (?, ?)`
 
-    connection.query(sql, (error, results, fields) => {
+    connection.query(sql, [user, passwordHash], (error, results, fields) => {
         if (error) throw error;
         res.send(JSON.stringify(results));
     });
