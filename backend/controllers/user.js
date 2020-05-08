@@ -10,6 +10,6 @@ exports.signup = async (req, res, next) => {
 
     connection.query(sql, [user, passwordHash], (error, results, fields) => {
         if (error) throw error;
-        res.send(JSON.stringify(results));
+        res.status(205).send('signup successful')
     });
 }
