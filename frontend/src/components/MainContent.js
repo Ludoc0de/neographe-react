@@ -111,19 +111,19 @@ class MainContent extends Component {
     render(){ 
         return(
             <div className='mainContent'>
-                <img className='loaderImage' src={LoaderImage} 
+                <img className='loaderImage' alt='loaderImage' src={LoaderImage} 
                     style={{ display: this.state.loader}} />
                 <svg className='loader' style={{ display: this.state.loader }}>
                     <circle cx="80" cy="80" r="65" style={{animation: this.state.loader}}></circle>
                 </svg>
 
-                <img className='mainLogo' src={DarkLogo}  
+                <img className='mainLogo' alt='logo' src={DarkLogo}  
                     style={{ display: this.state.mainLog, animation:this.state.anime}}
                 />
 
                 {
                     !this.state.anime &&
-                    <img className='mainLogoMirror' src={DarkLogo}
+                    <img className='mainLogoMirror' alt='logo' src={DarkLogo}
                         style={{ display: this.state.LogoMirror }}
                     />
                 }
@@ -152,7 +152,7 @@ class MainContent extends Component {
                         > 
                         </div>
 
-                        <img className='services-image' src={Services}  />
+                        <img className='services-image' alt='services' src={Services}  />
                         <div className='services-text'>
                             <h3 className='services-h3'>Bienvenue sur Néographe</h3>
                             <div className='services-p'>
@@ -197,53 +197,54 @@ class MainContent extends Component {
                         <div className='project-portfolio'>
                             <div className='project-1 project-number'>
                                 <h3>Projet 1</h3>
-                                <img className='project-images' src={ProjectImage1} />
+                                <img className='project-images' alt='project' src={ProjectImage1} />
                                 <p className='project-p'>Réalisation d'un site vitrine en utilisant HTML5|CSS3 et validation W3C</p>
-                                <a className='project-a' href="https://projet1.neographe.org/" target="_blank">
+                                <a className='project-a' href="https://projet1.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Une agence web !
                                 </a>
                             </div>
 
                             <div className='project-2 project-number'>
                                 <h3>Projet 2</h3>
-                                <img className='project-images' src={ProjectImage2} />
+                                <img className='project-images' alt='project' src={ProjectImage2} />
                                 <p className='project-p'>Un site touristique avec wordpress, principe de SEO, Validation de la WCAG 2.0 et le responsive design !</p>
-                                <a className='project-a' href="https://neographe.org/" target="_blank">
+                                <a className='project-a' href="https://neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Pour du tourisme ?
                                 </a>
                             </div>
 
                             <div className='project-3 project-number'>
                                 <h3>Projet 3</h3>
-                                <img className='project-images' src={ProjectImage3} />
+                                <img className='project-images' alt='project' src={ProjectImage3} />
                                 <p className='project-p'>Utilisation de JavaScript, d'une API, d'une carte interactive, d'un formulaire et confirmation par signature.</p>
-                                <a className='project-a' href="https://projet3.neographe.org/" target="_blank">
+                                <a className='project-a' href="https://projet3.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Avec un vélo !
                                 </a>
                             </div>
 
                             <div className='project-4 project-number'>
                                 <h3>Projet 4</h3>
-                                <img className='project-images' src={ProjectImage4} />
+                                <img className='project-images' alt='project' src={ProjectImage4} />
                                 <p className='project-p'>L'univers du BackEnd avec PHP/MYSQ, blog en CRUD et utilisation de CSS BOOTSTRAP</p>
-                                <a className='project-a' href="https://projet4.neographe.org/" target="_blank">
+                                <a className='project-a' href="https://projet4.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Ou un livre ?!
                                 </a>
                             </div>
                             <div className='project-5 project-number'>
                                 <h3>Projet 5</h3>
-                                <img className='project-images' src={ProjectImage5} />
+                                <img className='project-images' alt='project' src={ProjectImage5} />
                                 <p className='project-p'>HTML5|CSS3|JS|PHP|MySql|GITHUB</p>
-                                <a className='project-a' href="https://food.neographe.org/" target="_blank">
+                                <a className='project-a' href="https://food.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Dès qu'on mange !
                                 </a>
                             </div>
         
                             <div className='project-6 project-number'>
                                 <h3>Projet 6</h3>
-                                <img className='project-images' src={ProjectImage6} />
+                                <img className='project-images' alt='project' src={ProjectImage6} />
                                 <p className='project-p'>HTML5|CSS3|REACTJS</p>
-                                <a className='project-a' href="https://neographe.org/" target="_blank">
+                                <a className='project-a' href="https://neographe.org/" 
+                                rel="noopener noreferrer" target="_blank">
                                     Ou prendre contact ?
                                 </a>
                             </div>
