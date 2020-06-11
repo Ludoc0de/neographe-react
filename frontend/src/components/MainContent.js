@@ -1,4 +1,20 @@
 import React, { Component } from 'react'
+// test
+import sunset from '../images/sunset.svg'
+import moon from '../images/moon.svg'
+
+// import DarkLogo from '../images/logo-black.png'
+import DarkLinkedin from '../images/darkLinkedin.svg'
+import DarkTwitter from '../images/darkTwitter.svg'
+import DarkContact from '../images/darkPhone.svg'
+import DarkAbout from '../images/darkAbout.svg'
+
+import Logo from '../images/logo-white.png'
+import Linkedin from '../images/linkedin.svg'
+import Twitter from '../images/twitter.svg'
+import Contact from '../images/phone.svg'
+import About from '../images/About.svg'
+// test
 import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
@@ -14,6 +30,10 @@ class MainContent extends Component {
     constructor(){
         super()
         this.state = {
+                // test
+                title: 'NEOGRAPHE',
+                moonLight: true,
+                // test
             loader: '',
             mainLog:'none',
             anime: 'none',
@@ -28,6 +48,10 @@ class MainContent extends Component {
             subject:"site",
             textArea:"Saisissez ici votre demande"
         }
+            // test
+            this.handleClick = this.handleClick.bind(this)
+            this.turnLight = this.turnLight.bind(this)
+            // test
         this.handleLoad = this.handleLoad.bind(this)
         this.handleClickServices = this.handleClickServices.bind(this)
         this.handleClickProject = this.handleClickProject.bind(this)
@@ -37,6 +61,11 @@ class MainContent extends Component {
     }
 
     componentDidMount(){
+        // test
+        this.turnOff.addEventListener('click', this.turnLight)
+        this.turnOn.addEventListener('click', this.turnLight)
+        // test
+
         window.addEventListener('load', this.handleLoad)
     }
 
@@ -56,6 +85,27 @@ class MainContent extends Component {
         })
         }, 2000)
     }
+
+        // test
+        handleClick() {
+            setTimeout(() => {
+                this.setState(prevState => {
+                    return {
+                        moonLight: !prevState.moonLight
+                    }
+                })
+            }, 500)
+        }
+
+        turnLight() {
+            document.body.classList.toggle('darkTheme')
+            this.firstSection.classList.toggle('darkTheme')
+            this.secondSection.classList.toggle('darkTheme')
+            this.thirdSection.classList.toggle('darkTheme')
+            this.header.classList.toggle('navDarkTheme')
+            this.footer.classList.toggle('navDarkTheme')
+        }
+        // test
 
     handleClickServices(){
         this.setState(prevState => {
@@ -110,6 +160,64 @@ class MainContent extends Component {
 
     render(){ 
         return(
+            //test
+            <>
+            <div>
+                <header ref={node => this.header = node} >
+                    <p className='header-p'>{this.state.title}</p>
+                    <div>
+                        <img className="moon" src={moon} alt="moon"
+                            ref={node => this.turnOn = node}
+                            onClick={this.handleClick}
+                            style={{ display: this.state.moonLight ? 'none' : 'inline-block' }}
+                        />
+
+                        <img className="sun" src={sunset} alt="sun"
+                            ref={node => this.turnOff = node}
+                            onClick={this.handleClick}
+                            style={{ display: this.state.moonLight ? 'inline-block' : 'none' }}
+                        />
+                    </div>
+                </header >
+
+                <footer ref={node => this.footer = node}>
+                    <a href='#'>
+                        {
+                            this.state.moonLight ?
+                                <img className="logo2" alt="darkLinkedin" src={DarkLinkedin} /> :
+                                <img className="logo2" alt="linkedin" src={Linkedin} />
+                        }
+                    </a>
+                    <a href='#'>
+                        {
+                            this.state.moonLight ?
+                                <img className="logo2" alt="darkTwitter" src={DarkTwitter} /> :
+                                <img className="logo2" alt="darkTwitter" src={Twitter} />
+                        }
+                    </a>
+                    {
+                        this.state.moonLight ?
+                            <img className="logo" alt="logo" src={DarkLogo} /> :
+                            <img className="logo" alt="logo" src={Logo} />
+                    }
+                    <a href='#'>
+                        {
+                            this.state.moonLight ?
+                                <img className="logo2" alt="contact" src={DarkContact} /> :
+                                <img className="logo2" alt="contact" src={Contact} />
+                        }
+                    </a>
+                    <a href='#'>
+                        {
+                            this.state.moonLight ?
+                                <img className="logo2" alt="about" src={DarkAbout} /> :
+                                <img className="logo2" alt="about" src={About} />
+                        }
+                    </a>
+                </footer >
+            </div >
+            {/* //test */}
+
             <div className='mainContent'>
                 <img className='loaderImage' alt='loaderImage' src={LoaderImage} 
                     style={{ display: this.state.loader}} />
@@ -128,7 +236,8 @@ class MainContent extends Component {
                     />
                 }
 
-                <section className='services' style={{ right: this.state.openServices ? '-'+0.25+'%' : '-'+100+'%'}}>
+                    <section ref={node => this.firstSection = node} className='services' 
+                    style={{ right: this.state.openServices ? '-'+0.25+'%' : '-'+100+'%'}}>
                     {!this.state.anime &&
                         <h2 className='services-h2' 
                             onClick={this.handleClickServices}
@@ -177,7 +286,8 @@ class MainContent extends Component {
                     </div>
                 </section>
                  
-                <section className='project' style={{right: this.state.openProject ? '-'+0.25+'%' : '-'+100+'%'}}>
+                    <section ref={node => this.secondSection = node} className='project' 
+                    style={{right: this.state.openProject ? '-'+0.25+'%' : '-'+100+'%'}}>
                     {!this.state.anime &&
                         <h2 className='project-h2'
                             onClick={this.handleClickProject}
@@ -253,7 +363,8 @@ class MainContent extends Component {
                     </div>
                 </section>
 
-                <section className='contact' style={{ right: this.state.openContact ? '-'+0.25+'%' : '-' + 100 + '%' }}>
+                    <section ref={node => this.thirdSection = node} className='contact' 
+                    style={{ right: this.state.openContact ? '-'+0.25+'%' : '-' + 100 + '%' }}>
                     {!this.state.anime &&
                         <h2 className='contact-h2'
                             onClick={this.handleClickContact}
@@ -346,6 +457,7 @@ class MainContent extends Component {
                 </section>
                     
             </div>
+            </>
         )
     }
 }
