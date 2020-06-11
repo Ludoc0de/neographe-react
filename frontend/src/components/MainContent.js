@@ -225,14 +225,23 @@ class MainContent extends Component {
                     <circle cx="80" cy="80" r="65" style={{animation: this.state.loader}}></circle>
                 </svg>
 
-                <img className='mainLogo' alt='logo' src={DarkLogo}  
+                {/* <img className='mainLogo' alt='logo' src={DarkLogo}  
                     style={{ display: this.state.mainLog, animation:this.state.anime}}
-                />
+                /> */}
+
+                {
+                    this.state.moonLight ?
+                        <img className='mainLogo' alt='logo' src={DarkLogo}
+                            style={{ display: this.state.mainLog, animation: this.state.anime }} /> :
+                        <img className='mainLogo' alt='logo' src={Logo}
+                            style={{ display: this.state.mainLog}}
+                        />
+                }
 
                 {
                     !this.state.anime &&
                     <img className='mainLogoMirror' alt='logo' src={DarkLogo}
-                        style={{ display: this.state.LogoMirror }}
+                        style={{ display: this.state.LogoMirror, animation:this.state.anime}}
                     />
                 }
 
