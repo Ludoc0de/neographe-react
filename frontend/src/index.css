@@ -231,12 +231,16 @@ footer:hover .logo2 {
 }
 
 /**/
+
+section {
+ background-color: blanchedalmond;
+}
+
 .services, .project, .contact {
   height: 90%;
   width: 100%;
   position:fixed;
   top:3.5em;
-  background-color: blanchedalmond;
   transition: 0.65s ease-in-out;
 }
 
