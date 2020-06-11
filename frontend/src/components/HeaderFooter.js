@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import sunset from '../images/sunset.svg'
 import moon from '../images/moon.svg'
 
@@ -13,6 +13,7 @@ import Linkedin from '../images/linkedin.svg'
 import Twitter from '../images/twitter.svg'
 import Contact from '../images/phone.svg'
 import About from '../images/About.svg'
+
 
 class HeaderFooter extends React.Component {
     constructor() {
@@ -107,3 +108,4 @@ class HeaderFooter extends React.Component {
 }
 
 export default HeaderFooter
+*/
