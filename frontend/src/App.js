@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderFooter from './components/HeaderFooter';
+//import HeaderFooter from './components/HeaderFooter';
 import MainContent from './components/MainContent';
 import Login from './components/Login';
 //
@@ -26,7 +26,7 @@ class App extends React.Component {
           </Route>
           <Route path="/">
             <div className='App-div'>
-              <HeaderFooter />
+              {/* <HeaderFooter /> */}
               <MainContent />
             </div >
           </Route>
