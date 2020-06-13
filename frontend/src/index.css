@@ -420,7 +420,7 @@ height: 40em;
   color: #0c0c0c;
   padding-top: 2em;
   border: none;
-  background-color: blanchedalmond;
+  background-color: rgba(0,0,0,0);
   transition: background-color 0.5s ease-in;
 }
 
@@ -436,7 +436,7 @@ height: 40em;
   width: 50%;
   height: 100%;
   pointer-events: none;
-  border-bottom: 0.1em solid #0c0c0c;
+  border-bottom: 0.1em solid darkblue;
 }
 
 .contact-input label::after{
