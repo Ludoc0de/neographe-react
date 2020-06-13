@@ -266,7 +266,7 @@ class MainContent extends Component {
                             onClick={this.handleClickServices}
                             style={{ 
                                 width: this.state.borderService && 0.3+'em',
-                                backgroundColor: this.state.borderService && '#050505'
+                                backgroundColor: this.state.borderService && '#4175af'
                             }}
                         > 
                         </div>
