@@ -284,32 +284,35 @@ section {
   animation:pop 0.65s ease; 
 }
 
-/* .services-p, */
+.services-p,
 .project-p,
 .contact-p {
   margin-left: 1em;
 }
 
 .services-illustration {
-margin-top: 5em;
-display: flex;
-justify-content: space-around;
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
 }
 
 .services-image{
-width: 50em;
-height: 40em;
+  width: 50%;
 }
 
 .services-h3 {
   font-size: x-large;
   column-span: inherit;
 }
+
 .services-text {
   padding-left: 4em;
+  padding-right: 2.75em;
   columns: 2 25em;
   column-gap: 2em;
   text-align: justify;
+  width: 50%;
+
 }
 
 /* border services */
@@ -550,10 +553,10 @@ textarea {
 
   .services-text{
     padding-left: 0.75em;
-    padding-right: 2.75em;
     overflow-y: auto;
     max-height: 35em;
     columns: unset;
+    width: auto;
   }
 
   .services-h3 {
