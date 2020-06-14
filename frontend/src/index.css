@@ -139,6 +139,7 @@ footer:hover .logo2 {
 }
 
 .mainContent:hover .mainLogoMirror{
+  background-color: blanchedalmond;
   opacity: 1;
   transform: translateX(30px);
   transition: ease-in 0.5s;
@@ -167,7 +168,7 @@ footer:hover .logo2 {
   transition: ease 0.5s;
   animation: start 0.65s ease;
   opacity: 0;
-  background-color: blanchedalmond;
+  /* background-color: blanchedalmond; */
   /*animation: slashRight 0.5s ease-in forwards;*/
   /*animation-delay: 0.5s;*/
 }
