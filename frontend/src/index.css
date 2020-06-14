@@ -142,7 +142,7 @@ footer:hover .logo2 {
   background-color: blanchedalmond;
   opacity: 1;
   transform: translateX(30px);
-  transition: ease-in 0.5s;
+  transition:  background-color ease-in 0.5s;
 }
 
 .mainLogo{
@@ -168,7 +168,6 @@ footer:hover .logo2 {
   transition: ease 0.5s;
   animation: start 0.65s ease;
   opacity: 0;
-  /* background-color: blanchedalmond; */
   /*animation: slashRight 0.5s ease-in forwards;*/
   /*animation-delay: 0.5s;*/
 }
