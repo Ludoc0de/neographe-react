@@ -611,7 +611,7 @@ textarea {
     padding-bottom: 0.75em;
     width: 5em;
     border-radius: 1em;
-    filter: drop-shadow(8px 8px 8px black) blur(0px);
+    filter: drop-shadow(5px 5px 8px #4175af) blur(0px);
     transition: 0.6s ease-in-out;
   }
 
