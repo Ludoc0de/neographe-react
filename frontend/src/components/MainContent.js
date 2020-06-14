@@ -241,9 +241,11 @@ class MainContent extends Component {
                 }
 
                 {
-                    !this.state.moonLight &&
+                    this.state.moonLight ?
+                        <img className='mainLogoMirror' alt='logo' src={DarkLogo}
+                                style={{ display: this.state.LogoMirror, animation: 'none'}} /> :
                         <img className='mainLogoMirror' alt='logo' src={Logo}
-                            style={{ display: this.state.LogoMirror, animation: 'none'}} />
+                                style={{ animation: 'none', backgroundColor: '#0a1119'}} />
                 }
 
                     <section ref={node => this.firstSection = node} className='services' 
