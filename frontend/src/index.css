@@ -375,7 +375,7 @@ section {
 }
 
 .project-number:hover .project-images{
-  filter: drop-shadow(8px 8px 8px black) blur(0px);
+  filter: drop-shadow(8px 8px 8px #4175af) blur(0px);
 }
 
 .project-p {
