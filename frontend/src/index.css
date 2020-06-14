@@ -19,8 +19,10 @@ li {
 }
 
 .darkTheme {
-  background-color: #050505;
-  color: beige;
+  /* background-color: #050505; */
+  background-color:#0a1119;
+  /* color: beige; */
+  color:#dcdcc5;
   transition: 0.8s ease-out;
 }
 
@@ -45,7 +47,8 @@ header {
 }
 
 .navDarkTheme {
-  background-color: #111111;
+  /* background-color: #111111; */
+  background-color: #080d13;
 }
 
 .header-p {
@@ -164,6 +167,7 @@ footer:hover .logo2 {
   transition: ease 0.5s;
   animation: start 0.65s ease;
   opacity: 0;
+  background-color: blanchedalmond;
   /*animation: slashRight 0.5s ease-in forwards;*/
   /*animation-delay: 0.5s;*/
 }
