@@ -247,7 +247,7 @@ section {
   position: relative;
   right:2em;
   background-color: #4175af;
-  writing-mode:sideways-rl;
+  writing-mode:vertical-rl;
   margin-top: 0em;
   padding:0.2em 0 0.2em 0.3em;
   border-radius: 0.5em 0 0 0.5em;
@@ -266,7 +266,7 @@ section {
   position: relative;
   right:2em;
   background-color: #4175af;
-  writing-mode:sideways-rl;
+  writing-mode:vertical-rl;
   padding:0.2em 0 0.2em 0.3em;
   border-radius: 0.5em 0 0 0.5em;
   transition: 0.5s linear;
@@ -277,7 +277,7 @@ section {
   position: relative;
   right:2em;
   background-color: #4175af;
-  writing-mode:sideways-rl;
+  writing-mode:vertical-rl;
   padding:0.2em 0 0.2em 0.3em; 
   border-radius: 0.5em 0 0 0.5em;
   transition: 0.5s linear;
