@@ -19,9 +19,7 @@ li {
 }
 
 .darkTheme {
-  /* background-color: #050505; */
   background-color:#0a1119;
-  /* color: beige; */
   color:#dcdcc5;
   transition: 0.8s ease-out;
 }
@@ -35,10 +33,6 @@ header {
   margin: -0.5em 0em 0em -0.5em;
   padding-left: 1em;
   display: flex;
-  /*position: fixed;
-  top: 0;
-  left: 0;
-  */
   width: 100%;
   height: 3.5em;
   justify-content: center;
@@ -47,7 +41,6 @@ header {
 }
 
 .navDarkTheme {
-  /* background-color: #111111; */
   background-color: #080d13;
 }
 
@@ -117,20 +110,12 @@ footer:hover .logo2 {
   transition: 0.5s ease;
 }
 
-/* */
-
 .mainContent{
   width: 100%;
   padding-top: 3.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  */
 }
 
 .mainContent:hover .mainLogo{
@@ -162,23 +147,11 @@ footer:hover .logo2 {
 
 .mainLogoMirror{
   position: absolute;
-  /*left: 0;*/
   width : 45em;
   clip-path: polygon(0% 100%, 0% 120%, 100% -21%, 100% 100%);
   transition: ease 0.5s;
   animation: start 0.65s ease;
   opacity: 0;
-  /*animation: slashRight 0.5s ease-in forwards;*/
-  /*animation-delay: 0.5s;*/
-}
-
-@keyframes slashRight {
-  0% {
-    transform: translateX(0px);
-  }
-  100%{
-    transform: translateX(30px);
-  }
 }
 
 .loaderImage { 
@@ -235,10 +208,8 @@ footer:hover .logo2 {
   }
 }
 
-/**/
-
 section {
- background-color: blanchedalmond;
+  background-color: blanchedalmond;
 }
 
 .services, .project, .contact {
@@ -334,7 +305,6 @@ section {
 }
 
 /* images project */
-
 .project-illustration {
   display: flex;
   align-items: center;
@@ -526,7 +496,6 @@ textarea {
 }
 
 /* phone */
-
 @media screen and (max-width: 540px) {
 
   .mainLogo{
@@ -545,7 +514,6 @@ textarea {
   }
 
   /*SERVICES*/
-
   .border {
     position: absolute;
     top: 50%;
@@ -570,7 +538,6 @@ textarea {
   }
 
   /*PROJETS*/
-
   .project-illustration {
     justify-content: start;
     margin-left: 0.5em;;
@@ -622,7 +589,6 @@ textarea {
   }
 
    /*CONTACT*/
-
   .contact-illustration {
     margin-left: 1.5em;
   }
