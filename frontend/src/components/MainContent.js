@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-// test
 import sunset from '../images/sunset.svg'
 import moon from '../images/moon.svg'
 
-// import DarkLogo from '../images/logo-black.png'
 import DarkLinkedin from '../images/darkLinkedin.svg'
 import DarkTwitter from '../images/darkTwitter.svg'
 import DarkContact from '../images/darkPhone.svg'
@@ -14,7 +12,7 @@ import Linkedin from '../images/linkedin.svg'
 import Twitter from '../images/twitter.svg'
 import Contact from '../images/phone.svg'
 import About from '../images/About.svg'
-// test
+
 import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
@@ -30,10 +28,8 @@ class MainContent extends Component {
     constructor(){
         super()
         this.state = {
-                // test
-                title: 'NEOGRAPHE',
-                moonLight: true,
-                // test
+            title: 'NEOGRAPHE',
+            moonLight: true,
             loader: '',
             mainLog:'none',
             anime: 'none',
@@ -48,10 +44,9 @@ class MainContent extends Component {
             subject:"site",
             textArea:"Saisissez ici votre demande"
         }
-            // test
-            this.handleClick = this.handleClick.bind(this)
-            this.turnLight = this.turnLight.bind(this)
-            // test
+
+        this.handleClick = this.handleClick.bind(this)
+        this.turnLight = this.turnLight.bind(this)
         this.handleLoad = this.handleLoad.bind(this)
         this.handleClickServices = this.handleClickServices.bind(this)
         this.handleClickProject = this.handleClickProject.bind(this)
@@ -61,10 +56,8 @@ class MainContent extends Component {
     }
 
     componentDidMount(){
-        // test
         this.turnOff.addEventListener('click', this.turnLight)
         this.turnOn.addEventListener('click', this.turnLight)
-        // test
 
         window.addEventListener('load', this.handleLoad)
     }
@@ -86,7 +79,6 @@ class MainContent extends Component {
         }, 2000)
     }
 
-        // test
         handleClick() {
             setTimeout(() => {
                 this.setState(prevState => {
@@ -105,7 +97,6 @@ class MainContent extends Component {
             this.header.classList.toggle('navDarkTheme')
             this.footer.classList.toggle('navDarkTheme')
         }
-        // test
 
     handleClickServices(){
         this.setState(prevState => {
@@ -160,7 +151,6 @@ class MainContent extends Component {
 
     render(){ 
         return(
-            //test
             <>
             <div>
                 <header ref={node => this.header = node} >
@@ -171,7 +161,6 @@ class MainContent extends Component {
                             onClick={this.handleClick}
                             style={{ display: this.state.moonLight ? 'none' : 'inline-block' }}
                         />
-
                         <img className="sun" src={sunset} alt="sun"
                             ref={node => this.turnOff = node}
                             onClick={this.handleClick}
@@ -216,7 +205,6 @@ class MainContent extends Component {
                     </a>
                 </footer >
             </div >
-            {/* //test */}
 
             <div className='mainContent'>
                 <img className='loaderImage' alt='loaderImage' src={LoaderImage} 
@@ -298,7 +286,7 @@ class MainContent extends Component {
                     </div>
                 </section>
                  
-                    <section ref={node => this.secondSection = node} className='project' 
+                <section ref={node => this.secondSection = node} className='project' 
                     style={{right: this.state.openProject ? '-'+0.25+'%' : '-'+100+'%'}}>
                     {!this.state.anime &&
                         <h2 className='project-h2'
@@ -310,7 +298,6 @@ class MainContent extends Component {
                                 marginLeft: this.state.openProject ? 0 + 'em' : 0.5 + 'em',
                                 writingMode: this.state.openProject && 'horizontal-tb'
                             }}
-                            
                         >
                             Projets réalisés
                         </h2>
@@ -347,7 +334,9 @@ class MainContent extends Component {
                             <div className='project-4 project-number'>
                                 <h3>Projet 4</h3>
                                 <img className='project-images' alt='project' src={ProjectImage4} />
-                                <p className='project-p'>L'univers du BackEnd avec PHP/MYSQ, blog en CRUD et utilisation de CSS BOOTSTRAP</p>
+                                <p className='project-p'>
+                                    L'univers du BackEnd avec PHP/MYSQ, blog en CRUD et utilisation de CSS BOOTSTRAP
+                                </p>
                                 <a className='project-a' href="https://projet4.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Ou un livre ?!
                                 </a>
@@ -387,13 +376,11 @@ class MainContent extends Component {
                                 marginLeft: this.state.openContact ? 0 + 'em' : 0.5 + 'em',
                                 writingMode: this.state.openContact && 'horizontal-tb'
                             }}
-
                         >
                             Contact
                         </h2>
                     }
                     <div className="contact-illustration">
-                       
                         <form className="contact-form" onSubmit={this.handleSubmit} action='http://localhost:3001/api/form' method='post'>
                             <p className="contact-input">
                                 <input
@@ -460,14 +447,8 @@ class MainContent extends Component {
                                 name="submit"
                             />
                         </form>
-
-                        {/* <div className="test">
-                        </div> */}
-                       
                     </div>
-                    
                 </section>
-                    
             </div>
             </>
         )
