@@ -25,8 +25,8 @@ exports.login = async (req, res, next) => {
         } else if (results.length > 0) {
             const valid = await bcrypt.compare(password, results[0].password)
             if (valid) {
-                res.status(205).send('Login sucessfull')
-                //res.redirect('https://www.google.com')
+                //res.status(205).send('Login sucessfull')
+                res.status(205).redirect('http://localhost:3000/')
             } else {
                 res.status(410).send('password does not exist')
             }
