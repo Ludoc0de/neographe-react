@@ -317,7 +317,7 @@ class MainContent extends Component {
                                 <h3>Projet 2</h3>
                                 <img className='project-images' alt='project' src={ProjectImage2} />
                                 <p className='project-p'>Un site touristique avec wordpress, principe de SEO, Validation de la WCAG 2.0 et le responsive design !</p>
-                                <a className='project-a' href="https://neographe.org/" rel="noopener noreferrer" target="_blank">
+                                    <a className='project-a' href="https://projet2.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Pour du tourisme ?
                                 </a>
                             </div>
