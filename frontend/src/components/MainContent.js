@@ -256,11 +256,11 @@ class MainContent extends Component {
                                      
                                     Enfin, il nous est possible d'arrêter le temps avec notre équipe de photographes qui sauront satisfaire les moments éternels de votre vie.
                                 </p>
-                                <h4>
-                                    Création site | Création de logo | Shooting photo 
+                                <h1 className='services-h1'>
+                                    Création site web | Création de logo | Shooting photo 
                                     <br/>
                                     Neographe, c'est ca !
-                                </h4>
+                                </h1>
                             </div>
                         </div>
                     </div>
