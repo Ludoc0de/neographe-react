@@ -4,15 +4,9 @@ import moon from '../images/moon.svg'
 
 import DarkLinkedin from '../images/darkLinkedin.svg'
 import DarkTwitter from '../images/darkTwitter.svg'
-import DarkContact from '../images/darkPhone.svg'
-import DarkAbout from '../images/darkAbout.svg'
-
 import Logo from '../images/logo-white.png'
 import Linkedin from '../images/linkedin.svg'
 import Twitter from '../images/twitter.svg'
-import Contact from '../images/phone.svg'
-import About from '../images/About.svg'
-
 import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
@@ -170,18 +164,11 @@ class MainContent extends Component {
                 </header >
 
                 <footer ref={node => this.footer = node}>
-                    <a href='#'>
+                    <a href='https://www.linkedin.com/in/ludovic-c/' target='_blank' rel='noopener noreferrer'>
                         {
                             this.state.moonLight ?
                                 <img className="logo2" alt="darkLinkedin" src={DarkLinkedin} /> :
                                 <img className="logo2" alt="linkedin" src={Linkedin} />
-                        }
-                    </a>
-                    <a href='#'>
-                        {
-                            this.state.moonLight ?
-                                <img className="logo2" alt="darkTwitter" src={DarkTwitter} /> :
-                                <img className="logo2" alt="darkTwitter" src={Twitter} />
                         }
                     </a>
                     {
@@ -189,18 +176,11 @@ class MainContent extends Component {
                             <img className="logo" alt="logo" src={DarkLogo} /> :
                             <img className="logo" alt="logo" src={Logo} />
                     }
-                    <a href='#'>
+                    <a href='https://twitter.com/neographe_org' target='_blank' rel='noopener noreferrer'>
                         {
                             this.state.moonLight ?
-                                <img className="logo2" alt="contact" src={DarkContact} /> :
-                                <img className="logo2" alt="contact" src={Contact} />
-                        }
-                    </a>
-                    <a href='#'>
-                        {
-                            this.state.moonLight ?
-                                <img className="logo2" alt="about" src={DarkAbout} /> :
-                                <img className="logo2" alt="about" src={About} />
+                                <img className="logo2" alt="darkTwitter" src={DarkTwitter} /> :
+                                <img className="logo2" alt="darkTwitter" src={Twitter} />
                         }
                     </a>
                 </footer >
