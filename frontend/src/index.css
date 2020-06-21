@@ -282,6 +282,10 @@ section {
   column-span: inherit;
 }
 
+.services-h1 {
+  font-size: larger;
+}
+
 .services-text {
   padding-left: 4em;
   padding-right: 2.75em;
