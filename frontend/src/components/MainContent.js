@@ -246,15 +246,15 @@ class MainContent extends Component {
                             <h3 className='services-h3'>Bienvenue sur Néographe</h3>
                             <div className='services-p'>
                                 <p>
-                                    Néographe, c'est quoi ? C'est une nouvelle aventure pleine de passion ! Mais il arrive de partir en retard, de s'égarer, voir de se perdre. Il faut savoir s'arrêter puis, faire le point où on est et... se lancer ! Neographe sera là pour vous aider à conceptualiser vos idées dans le monde du numérique si indispensable à nos vies.
+                                    Néographe, c'est quoi ? C'est une nouvelle aventure pleine de passion ! Mais il arrive de partir en retard, de s'égarer, voire de se perdre. Il faut savoir s'arrêter puis, faire le point où on est et... se lancer ! Neographe sera là pour vous aider à conceptualiser vos idées dans le monde du numérique si indispensable à nos vies.
                                 </p>
                                 <p>
-                                    Nous apportons nos services dans la création de vos sites internets avec les derniers langages modernes. Une écoute et un suivi personnaliser de vos projets, un retour professionnel sur les conseils techniques pour la vie de votre site.
+                                    Nous apportons nos services dans la création de vos sites web avec les derniers langages modernes. Une écoute et un suivi personnalisé  de vos projets, un retour professionnel sur les conseils techniques pour la vie de votre site.
                                 </p>
                                 <p>
                                     Vous cherchez à vous démarquer ? Nous réalisons aussi des logos à votre image, reflétons les idées même de ce que vous désirez.
                                      
-                                    Enfin, il nous est possible d'arrêter le temps avec notre équipe de photographes qui sauront satisfaire les moments éternels de votre vie.
+                                    Enfin, il nous est possible d'arrêter le temps avec notre équipe de photographes qui saura satisfaire les moments éternels de votre vie.
                                 </p>
                                 <h1 className='services-h1'>
                                     Création site web | Création de logo | Shooting photo 
