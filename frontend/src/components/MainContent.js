@@ -125,7 +125,7 @@ class MainContent extends Component {
     }
 
     handleSubmit(event){
-        fetch('https://test.neographe.org/api/form', {
+        fetch('http://localhost:3001/api/form', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -361,7 +361,7 @@ class MainContent extends Component {
                         </h2>
                     }
                     <div className="contact-illustration">
-                            <form className="contact-form" onSubmit={this.handleSubmit} action='https://test.neographe.org/api/form' method='post'>
+                            <form className="contact-form" onSubmit={this.handleSubmit} action='http://localhost:3001/api/form' method='post'>
                             <p className="contact-input">
                                 <input
                                     type="text"
