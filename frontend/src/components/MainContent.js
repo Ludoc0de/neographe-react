@@ -125,7 +125,7 @@ class MainContent extends Component {
     }
 
     handleSubmit(event){
-        fetch('https://test.neographe.org/api/form/api/form', {
+        fetch('https://test.neographe.org/api/form', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
