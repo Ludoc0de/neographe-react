@@ -7,7 +7,7 @@ const userRoutes = require('./routes/user')
 const app = express()
 
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://test.neographe.org/');
+    res.setHeader('Access-Control-Allow-Origin', 'https://test.neographe.org:3000/');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
     next();
