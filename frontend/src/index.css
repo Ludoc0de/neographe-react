@@ -250,6 +250,7 @@ section {
 }
 
 .project-h2{
+  cursor:pointer;
   position: relative;
   right:2em;
   background-color: #4175af;
