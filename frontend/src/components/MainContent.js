@@ -286,7 +286,7 @@ class MainContent extends Component {
                             
                             style={{
                                 right: this.state.openProject && 0 + 'em',
-                                marginTop: this.state.openProject ? 0 + 'em' : 6 + 'em',
+                                marginTop: this.state.openProject ? 0 + 'em' : 5.7 + 'em',
                                 marginLeft: this.state.openProject ? 0 + 'em' : 0.5 + 'em',
                                 writingMode: this.state.openProject && 'horizontal-tb'
                             }}
