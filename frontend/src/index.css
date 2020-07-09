@@ -521,9 +521,12 @@ textarea {
 
 /* phone */
 @media screen and (max-width: 540px) {
-
+  
+  .mainContent {
+    touch-action: none;
+  }
   .mainLogo{
-    margin-top: 30%;
+    margin-top: 10%;
     width : 20em;
   }
 
@@ -551,10 +554,12 @@ textarea {
 
   .services-text{
     padding-left: 0.75em;
+    padding-bottom: 2em;
     overflow-y: auto;
     max-height: 35em;
     columns: unset;
     width: auto;
+    height: 25em;
   }
 
   .services-h3 {
@@ -564,7 +569,8 @@ textarea {
   /*PROJETS*/
   .project-illustration {
     justify-content: start;
-    margin-left: 0.5em;;
+    margin-left: 0.5em;
+    overflow-y: auto;
   }
 
   .project-portfolio {
