@@ -28,9 +28,9 @@ class MainContent extends Component {
             mainLog:'none',
             anime: 'none',
             LogoMirror:'none',
-            openServicesServices:false,
-            openServicesProject: false,
-            openServicesContact: false,
+            // openServicesServices:false,
+            // openServicesProject: false,
+            // openServicesContact: false,
             borderService:false,
             firstName:"",
             lastName:"",
@@ -230,7 +230,9 @@ class MainContent extends Component {
                             Services
                         </h2>
                     }
-                
+
+                    <p className='services-info'> cliquer ici</p>
+                       
                     <div className='services-illustration'>
                         <div className='border'
                             onClick={this.handleClickServices}
