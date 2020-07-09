@@ -3,10 +3,10 @@ import sunset from '../images/sunset.svg'
 import moon from '../images/moon.svg'
 
 import DarkLinkedin from '../images/darkLinkedin.svg'
-import DarkTwitter from '../images/darkTwitter.svg'
+// import DarkTwitter from '../images/darkTwitter.svg'
 import Logo from '../images/logo-white.png'
 import Linkedin from '../images/linkedin.svg'
-import Twitter from '../images/twitter.svg'
+// import Twitter from '../images/twitter.svg'
 import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
@@ -176,7 +176,7 @@ class MainContent extends Component {
                             <img className="logo" alt="logo" src={DarkLogo} /> :
                             <img className="logo" alt="logo" src={Logo} />
                     }
-                    <a href='https://twitter.com/neographe_org' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://www.instagram.com/asakura.cl/' target='_blank' rel='noopener noreferrer'>
                         {
                             this.state.moonLight ?
                                 <img className="logo2" alt="darkTwitter" src={DarkTwitter} /> :
@@ -344,7 +344,7 @@ class MainContent extends Component {
                     </div>
                 </section>
 
-                    <section ref={node => this.thirdSection = node} className='contact' 
+                {/* <section ref={node => this.thirdSection = node} className='contact' 
                     style={{ right: this.state.openContact ? '-'+0.25+'%' : '-' + 100 + '%' }}>
                     {!this.state.anime &&
                         <h2 className='contact-h2'
@@ -428,7 +428,7 @@ class MainContent extends Component {
                             />
                         </form>
                     </div>
-                </section>
+                </section> */}
             </div>
             </>
         )
