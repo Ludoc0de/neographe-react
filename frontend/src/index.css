@@ -260,6 +260,15 @@ section {
   animation:pop 0.65s ease; 
 }
 
+.project-info{
+  width: 5.1em;
+  display: inherit;
+  position: relative;
+  left:17em;
+  bottom:3em;
+  font-weight: 600;
+}
+
 .contact-h2{
   position: relative;
   right:2em;
