@@ -221,6 +221,7 @@ section {
 }
 
 .services-h2{
+  cursor:pointer;
   position: relative;
   right:2em;
   background-color: #4175af;
@@ -237,6 +238,13 @@ section {
     right: 0em;
   }
   
+}
+
+.services-h4{
+  position: relative;
+  left:10em;
+  bottom:3em;
+  font-weight: 600;
 }
 
 .project-h2{
