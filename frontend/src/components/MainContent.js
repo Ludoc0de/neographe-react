@@ -284,6 +284,9 @@ class MainContent extends Component {
                             Projets réalisés
                         </h2>
                     }
+
+                    <p className='project-info'> cliquer ici</p>
+
                     <div className='project-illustration'>
                         <div className='project-portfolio'>
                             <div className='project-1 project-number'>
