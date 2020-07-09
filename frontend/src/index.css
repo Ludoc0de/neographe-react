@@ -240,7 +240,9 @@ section {
   
 }
 
-.services-h4{
+.services-info{
+  width: 5.1em;
+  display: inherit;
   position: relative;
   left:10em;
   bottom:3em;
