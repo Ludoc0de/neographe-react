@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import sunset from '../images/sunset.svg'
 import moon from '../images/moon.svg'
 
-import DarkLinkedin from '../images/darkLinkedin.svg'
-// import DarkTwitter from '../images/darkTwitter.svg'
+import DarkMail from '../images/darkMail.svg'
+import DarkInsta from '../images/darkInsta.svg'
 import Logo from '../images/logo-white.png'
-import Linkedin from '../images/linkedin.svg'
-// import Twitter from '../images/twitter.svg'
+import Mail from '../images/mail.svg'
+import Insta from '../images/insta.svg'
 import DarkLogo from '../images/logo-black.png'
 import LoaderImage from '../images/loader.svg'
 
@@ -87,7 +87,7 @@ class MainContent extends Component {
             document.body.classList.toggle('darkTheme')
             this.firstSection.classList.toggle('darkTheme')
             this.secondSection.classList.toggle('darkTheme')
-            this.thirdSection.classList.toggle('darkTheme')
+            // "for contact zone" this.thirdSection.classList.toggle('darkTheme')
             this.header.classList.toggle('navDarkTheme')
             this.footer.classList.toggle('navDarkTheme')
         }
@@ -164,11 +164,11 @@ class MainContent extends Component {
                 </header >
 
                 <footer ref={node => this.footer = node}>
-                    <a href='https://www.linkedin.com/in/ludovic-c/' target='_blank' rel='noopener noreferrer'>
+                    <a href='mailto:contact@neographe.org' target='_blank' rel='noopener noreferrer'>
                         {
                             this.state.moonLight ?
-                                <img className="logo2" alt="darkLinkedin" src={DarkLinkedin} /> :
-                                <img className="logo2" alt="linkedin" src={Linkedin} />
+                                <img className="logo2" alt="DarkMail" src={DarkMail} /> :
+                                <img className="logo2" alt="Mail" src={Mail} />
                         }
                     </a>
                     {
@@ -179,8 +179,8 @@ class MainContent extends Component {
                         <a href='https://www.instagram.com/asakura.cl/' target='_blank' rel='noopener noreferrer'>
                         {
                             this.state.moonLight ?
-                                <img className="logo2" alt="darkTwitter" src={DarkTwitter} /> :
-                                <img className="logo2" alt="darkTwitter" src={Twitter} />
+                                <img className="logo2" alt="darkInsta" src={DarkInsta} /> :
+                                <img className="logo2" alt="Insta" src={Insta} />
                         }
                     </a>
                 </footer >
