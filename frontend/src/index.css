@@ -241,8 +241,7 @@ section {
 }
 
 .services-info{
-  width: 5.1em;
-  display: inherit;
+  pointer-events: none;
   position: relative;
   left:10em;
   bottom:3em;
@@ -262,8 +261,7 @@ section {
 }
 
 .project-info{
-  width: 5.1em;
-  display: inherit;
+  pointer-events: none;
   position: relative;
   left:17em;
   bottom:3em;
