@@ -70,7 +70,7 @@ class MainContent extends Component {
                 LogoMirror: 'bloc'
             }
         })
-        }, 2000)
+        }, 1000)
     }
 
         handleClick() {
