@@ -155,11 +155,21 @@ class MainContent extends Component {
                             onClick={this.handleClick}
                             style={{ display: this.state.moonLight ? 'none' : 'inline-block' }}
                         />
-                        <img className="sun" src={sunset} alt="sun"
-                            ref={node => this.turnOff = node}
-                            onClick={this.handleClick}
-                            style={{ display: this.state.moonLight ? 'inline-block' : 'none' }}
-                        />
+
+                        {
+                            this.state.anime ?
+                            <img className="sun" src={sunset} alt="sun"
+                                ref={node => this.turnOff = node}
+                                onClick={this.handleClick}
+                                style={{ display:'none' }}
+                            /> : 
+                            <img className="sun" src={sunset} alt="sun"
+                                ref={node => this.turnOff = node}
+                                onClick={this.handleClick}
+                                style={{ display: this.state.moonLight ? 'inline-block' : 'none' }}
+                            />
+                        }
+                        
                     </div>
                 </header >
 
