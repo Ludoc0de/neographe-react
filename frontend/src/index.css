@@ -296,6 +296,10 @@ section {
   margin-left: 1em;
 }
 
+strong, b {
+  color: #4175af;
+}
+
 .services-illustration {
   margin-top: 5em;
   display: flex;
