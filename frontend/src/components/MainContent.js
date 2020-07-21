@@ -193,6 +193,7 @@ class MainContent extends Component {
                                 <img className="logo2" alt="Insta" src={Insta} />
                         }
                     </a>
+                    <h4 className='footer-h'>Créateur de site web</h4>
                 </footer >
             </div >
 
@@ -258,10 +259,12 @@ class MainContent extends Component {
                             <h3 className='services-h3'>Bienvenue sur Néographe</h3>
                             <div className='services-p'>
                                 <p>
-                                    Néographe, c'est quoi ? C'est une nouvelle aventure pleine de passion ! Mais il arrive de partir en retard, de s'égarer, voire de se perdre. Il faut savoir s'arrêter puis, faire le point où on est et... se lancer ! Neographe sera là pour vous aider à conceptualiser vos idées dans le monde du numérique si indispensable à nos vies.
+                                    Néographe, c'est quoi ? Une équipe de freelance !
+                                    <br/>
+                                    Nous serons là pour vous aider à conceptualiser vos idées dans le monde du numérique si indispensable à nos vies.
                                 </p>
                                 <p>
-                                    Nous apportons nos services dans la création de vos sites web avec les derniers langages modernes. Une écoute et un suivi personnalisé  de vos projets, un retour professionnel sur les conseils techniques pour la vie de votre site.
+                                    Nous apportons nos services dans la création de site web avec les derniers langages modernes. Une écoute et un suivi personnalisé  de vos projets, un retour professionnel sur les conseils techniques pour la vie de votre site.
                                 </p>
                                 <p>
                                     Vous cherchez à vous démarquer ? Nous réalisons aussi des logos à votre image, reflétons les idées même de ce que vous désirez.
@@ -269,7 +272,7 @@ class MainContent extends Component {
                                     Enfin, il nous est possible d'arrêter le temps avec notre équipe de photographes qui saura satisfaire les moments éternels de votre vie.
                                 </p>
                                 <h1 className='services-h1'>
-                                    Création site web | Création de logo | Shooting photo 
+                                    Création site internet | Création de logo | Shooting photo 
                                     <br/>
                                     Neographe, c'est ca !
                                 </h1>
@@ -301,7 +304,7 @@ class MainContent extends Component {
                         <div className='project-portfolio'>
                             <div className='project-1 project-number'>
                                 <h3>Projet 1</h3>
-                                <img className='project-images' alt='project' src={ProjectImage1} />
+                                <img className='project-images' alt='icones agence web' src={ProjectImage1} />
                                 <p className='project-p'>Réalisation d'un site vitrine en utilisant HTML5|CSS3 et validation W3C</p>
                                 <a className='project-a' href="https://projet1.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Une agence web !
@@ -310,7 +313,7 @@ class MainContent extends Component {
 
                             <div className='project-2 project-number'>
                                 <h3>Projet 2</h3>
-                                <img className='project-images' alt='project' src={ProjectImage2} />
+                                <img className='project-images' alt='site touristique' src={ProjectImage2} />
                                 <p className='project-p'>Un site touristique avec wordpress, principe de SEO, Validation de la WCAG 2.0 et le responsive design !</p>
                                     <a className='project-a' href="https://projet2.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Pour du tourisme ?
@@ -319,7 +322,7 @@ class MainContent extends Component {
 
                             <div className='project-3 project-number'>
                                 <h3>Projet 3</h3>
-                                <img className='project-images' alt='project' src={ProjectImage3} />
+                                <img className='project-images' alt='site location vélo' src={ProjectImage3} />
                                 <p className='project-p'>Utilisation de JavaScript, d'une API, d'une carte interactive, d'un formulaire et confirmation par signature.</p>
                                 <a className='project-a' href="https://projet3.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Avec un vélo !
@@ -328,7 +331,7 @@ class MainContent extends Component {
 
                             <div className='project-4 project-number'>
                                 <h3>Projet 4</h3>
-                                <img className='project-images' alt='project' src={ProjectImage4} />
+                                <img className='project-images' alt='blog écrivain' src={ProjectImage4} />
                                 <p className='project-p'>
                                     L'univers du BackEnd avec PHP/MYSQ, blog en CRUD et utilisation de CSS BOOTSTRAP
                                 </p>
@@ -338,7 +341,7 @@ class MainContent extends Component {
                             </div>
                             <div className='project-5 project-number'>
                                 <h3>Projet 5</h3>
-                                <img className='project-images' alt='project' src={ProjectImage5} />
+                                    <img className='project-images' alt='blog food' src={ProjectImage5} />
                                 <p className='project-p'>HTML5|CSS3|JS|PHP|MySql|GITHUB</p>
                                 <a className='project-a' href="https://food.neographe.org/" rel="noopener noreferrer" target="_blank">
                                     Dès qu'on mange !
@@ -347,8 +350,8 @@ class MainContent extends Component {
         
                             <div className='project-6 project-number'>
                                 <h3>Projet 6</h3>
-                                <img className='project-images' alt='project' src={ProjectImage6} />
-                                <p className='project-p'>HTML5|CSS3|REACTJS</p>
+                                <img className='project-images' alt='site vitrine' src={ProjectImage6} />
+                                <p className='project-p'>Création site vitrine avec HTML5|CSS3|REACTJS</p>
                                 <a className='project-a' href="https://neographe.org/" 
                                 rel="noopener noreferrer" target="_blank">
                                     Ou prendre contact ?
