@@ -98,6 +98,17 @@ footer:hover .logo2 {
   transition: 0.5s ease;
 }
 
+.footer-h {
+  position: absolute;
+  right: 1em;
+}
+
+footer:hover .footer-h {
+  font-size: larger;
+  transition: 0.5s ease;
+}
+
+
 .logo {
   width: 2.5em;
   margin-right: 1.5em;
