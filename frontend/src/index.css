@@ -636,4 +636,11 @@ textarea {
     width: 50%;
   }
 
+  /*FOOTER*/
+  .footer-h {
+  position: absolute;
+  right: 0.5em;
+  bottom: 2.5em;
+  }
+
 }
